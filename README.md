@@ -19,3 +19,31 @@ Updating student and teacher information.
 
 Renaming tables.
 
+## Database Schema
+
+```sql
+CREATE TABLE students (
+  id INT PRIMARY KEY,
+  std_name VARCHAR(225),
+  std_birth DATE,
+  std_gender CHAR(1),
+  std_enrolldate VARCHAR(225),
+  std_email VARCHAR(225),
+  std_level INT,
+  std_track VARCHAR(225),
+  std_gpa INT
+);
+
+CREATE TABLE teachers (
+  teacher_id VARCHAR(10) PRIMARY KEY,
+  teacher_name VARCHAR(100),
+  birth_date DATE,
+  gender CHAR(1),
+  email VARCHAR(100),
+  office_number INT
+);
+
+CREATE TABLE courses (
+  course_id VARCHAR(10) PRIMARY KEY,
+  course_name VARCHAR(100)
+);
